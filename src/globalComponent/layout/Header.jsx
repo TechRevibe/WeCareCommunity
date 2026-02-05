@@ -67,7 +67,12 @@ function Header() {
 
           {/* Phone number */}
           <div className="flex items-center">
+            <a  href="tel:1800371070"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer">
             <ButtonContact number="1800 371 070" />
+            </a>
           </div>
         </div>
 
