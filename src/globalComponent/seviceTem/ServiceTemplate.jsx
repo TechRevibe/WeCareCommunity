@@ -41,6 +41,7 @@ function ServiceTemplate({
             <ImageSlider
               imgTitle={imgTitle}
               images={Array.isArray(img) ? img : [img]}
+              height="h-[400px] md:h-[500px] lg:h-[600px]" // horizontal rectangle
             />
           </div>
           <div className="flex-1 space-y-8">

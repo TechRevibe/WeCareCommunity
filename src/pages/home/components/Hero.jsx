@@ -6,7 +6,7 @@ function Hero() {
   return (
     
     
-    <section className="mt-40  xl:mt-20 md:pt-40  py-10  sm:p-4 flex flex-col items-center justify-start px-6 overflow-hidden relative bg-white">
+    <section className="mt-40  xl:mt-10 md:pt-40  py-10  sm:p-4 flex flex-col items-center justify-start px-6 overflow-hidden relative bg-white">
       
       {/* Soft Blue Radial Gradient Background */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_-10%,#e0e7ff_0%,#ffffff_50%)] lg:bg-[radial-gradient(circle_at_50%_-10%,#eef2ff_0%,#ffffff_45%)]" />

@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../../../globalComponent/herosection/Hero';
 import ServiceTemplate from '../../../globalComponent/seviceTem/ServiceTemplate';
-import img from "../../../assets/hero/shortTerm.jpg";
+import img from "../../../assets/house/1.jpg";
 function ShortTerm() {
   const heading ="Short Term Accommodation"
   const heading1 = "Short-Term \n Accommodation STA"

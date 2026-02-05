@@ -4,7 +4,7 @@ import img from '../../../assets/hero/plan.png'
 const WhoWeAre = () => {
   return (
     <section className="bg-white py-16 px-6 md:px-12 lg:px-24 not-first-of-type: ">
-      <div className="max-w-5xl   mx-auto flex flex-col-reverse  items-center md:flex-row  gap-8 justify-center">
+      <div className="max-w-5xl   mx-auto flex flex-col-reverse  items-start md:flex-row  gap-8 justify-center">
         
         {/* Left Side: Content */}
         <div className="flex-1 space-y-8 ">
@@ -23,7 +23,7 @@ const WhoWeAre = () => {
 
           {/* Footer Links */}
           <div className="pt-4 border-t border-gray-100 flex items-center gap-2 text-blue-500 font-semibold">
-            <a href="#" className="hover:underline">Learn More</a>
+            <a href="/services" className="hover:underline">Learn More</a>
             <span className="text-gray-300">|</span>
             <span className="text-gray-600">Contact Us</span>
             <a href="tel:1800371070" className="hover:underline">1800 371 070</a>

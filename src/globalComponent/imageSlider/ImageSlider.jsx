@@ -17,6 +17,16 @@ const ImageSlider = ({ images, imgTitle, interval = 3000 }) => {
     return () => clearInterval(slider);
   }, [images, interval]);
 
+  useEffect(() => {
+    const nextIndex = (index + 1) % images.length;
+    const prevIndex = (index - 1 + images.length) % images.length;
+  
+    [nextIndex, prevIndex].forEach((i) => {
+      const img = new Image();
+      img.src = images[i];
+    });
+  }, [index]);
+
   const prev = () =>
     setIndex((prev) => (prev - 1 + images.length) % images.length);
   const next = () => setIndex((prev) => (prev + 1) % images.length);
@@ -32,8 +42,9 @@ const ImageSlider = ({ images, imgTitle, interval = 3000 }) => {
           <img
             key={i}
             src={img}
+            loading={i === index ? "eager" : "lazy"}
             alt={imgTitle}
-            className="h-140  w-full object-cover scale-100"
+            className="h-full  w-full object-cover object-top-left"
           />
         ))}
       </div>
