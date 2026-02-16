@@ -43,7 +43,8 @@ const Form = () => {
 
   const { fields } = useFieldArray({ control, name: "references" });
 
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwUwNGpKdTgpPshi9tpXqXeFs8BCDrflyKa0F56pEsVEl0Kfhmcwo2R8Z_6JyyBrUh7-Q/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzjckKfIYSD6c3vpFoyCJPMBbWKuiC-ZB5RDVtTMlcHZ7KSKHHzzblCO8pryYj7I8B5PQ/exec";
+
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
