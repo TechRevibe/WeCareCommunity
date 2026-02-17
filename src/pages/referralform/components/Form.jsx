@@ -35,7 +35,7 @@ const formSchema = z.object({
 });
 
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbxqRS71ZMTg450O1ZDTzN5uSbilAQZd2YmQ777ArTq0Buk5gvo_91Zstwc30RtIqa4D/exec";
+  "https://script.google.com/macros/s/AKfycbzNAiRYO5Oj5WF9QM6ujxXE7t6GBtLQOb6NbHY2CxrBBeg6DiOEWA1KR0z0CRwouPdnXw/exec";
 
 const Form = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -113,7 +113,34 @@ useEffect(() => {
 
       if (response.data.status === "success") {
         alert(`Form submitted successfully! Ref ID: ${response.data.refId}`);
-        reset({ ...data, refId: response.data.refId });
+        reset({
+          firstName: "",
+          lastName: "",
+          dob: "",
+          street: "",
+          city: "",
+          state: "",
+          zip: "",
+          phone: "",
+          email: "",
+          ndis: "",
+          fundManaged: "",
+          planManager: "",
+          service: "",
+          comments: "",
+          recommend: "",
+          consentStatement1: "",
+          consentStatement2: "",
+          references: [
+            { name: "", address: "", contact: "" },
+            { name: "", address: "", contact: "" }
+          ],
+          referrerType: "",
+          status: "",
+          subStatus: "",
+          remarks: "",
+        });
+      
       } else {
         alert("Error: " + response.data.message);
       }
