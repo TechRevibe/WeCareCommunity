@@ -44,6 +44,12 @@ const Footer = () => {
                 149 Kinghorne St Goulburn, NSW 2580
                 <br />
                 <span className="font-semibold block mt-2 text-gray-800">
+                  Branch Office:{" "}
+                </span>
+                168 Harrow Rd Glenfield, NSW 2167
+                <br />
+              
+                <span className="font-semibold block mt-2 text-gray-800">
                   Other Services Area:
                 </span>
                 All Across Sydney, Southern Highland, Newcastle, Hawkesbury,
@@ -77,8 +83,7 @@ const Footer = () => {
               </h3>
               <div className="text-gray-600 text-lg space-y-2">
                 <p className="hover:text-blue-800 transition-colors">
-                  <a 
-                  href="mailto:info@wecarecommunity.com.au?subject=Enquiry%20from%20Website">
+                  <a href="mailto:info@wecarecommunity.com.au?subject=Enquiry%20from%20Website">
                     info@wecarecommunity.com.au
                   </a>
                 </p>
@@ -111,21 +116,21 @@ const Footer = () => {
                 ))}
               </div> */}
 
-<div className="w-64 h-40 flex items-center justify-center">
-    <img
-      src={logo}
-      alt="We Care Community Logo"
-      className="max-h-full max-w-full object-contain"
-    />
-  </div>
+              <div className="w-64 h-40 flex items-center justify-center">
+                <img
+                  src={logo}
+                  alt="We Care Community Logo"
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
 
-  <div className="w-64 h-40 flex items-center justify-center">
-    <img
-      src={ndislogo}
-      alt="NDIS Logo"
-      className="max-h-full max-w-full object-contain"
-    />
-  </div>
+              <div className="w-64 h-40 flex items-center justify-center">
+                <img
+                  src={ndislogo}
+                  alt="NDIS Logo"
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
             </div>
           </div>
 
